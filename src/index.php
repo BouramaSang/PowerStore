@@ -132,7 +132,7 @@
     </div>
 
   </nav>
-
+ <!-- SIDE BAR -->
  <?php include 'sidebar.php'; ?>
 
   <!-- MAIN CONTENT -->
@@ -620,15 +620,6 @@
 
     </div>
   </main>
-  <!-- Bootstrap JS cdn -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<!-- ApexCharts -->
-<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-  <!-- Bootstrap JS fichier main -->
-  <script src="./assets/js/main.js" type="module"></script>
-
-
-
 </body>
 
 </html>

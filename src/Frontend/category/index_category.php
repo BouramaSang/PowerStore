@@ -5,15 +5,15 @@
   <meta charset="UTF-8" />
   <title>Inventory - InApp Inventory Dashboard</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon_io/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon_io/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon_io/favicon-16x16.png">
-  <link rel="manifest" href="./assets/images/favicon_io/site.webmanifest">
+   <link rel="apple-touch-icon" sizes="180x180" href="../../assets/images/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="../../assets/images/favicon_io/site.webmanifest">
   <link href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" rel="stylesheet">
 
    <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
- <link rel="stylesheet" href="./assets/css/style.css">
+ <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
 
 <body>
@@ -53,7 +53,7 @@
             <ul class="list-unstyled p-0 m-0">
               <li class="p-3 border-bottom ">
                 <div class="d-flex gap-3">
-                  <img src="./assets/images/avatar/avatar-1.jpg" alt="" class="avatar avatar-sm rounded-circle" />
+                  <img src="../../assets/images/avatar/avatar-1.jpg" alt="" class="avatar avatar-sm rounded-circle" />
                   <div class="flex-grow-1 small">
                     <p class="mb-0">New order received</p>
                     <p class="mb-1">Order #12345 has been placed</p>
@@ -63,7 +63,7 @@
               </li>
               <li class="p-3 border-bottom ">
                 <div class="d-flex gap-3">
-                  <img src="./assets/images/avatar/avatar-4.jpg" alt="" class="avatar avatar-sm rounded-circle" />
+                  <img src="../../assets/images/avatar/avatar-4.jpg" alt="" class="avatar avatar-sm rounded-circle" />
                   <div class="flex-grow-1 small">
                     <p class="mb-0">New user registered</p>
                     <p class="mb-1">User @john_doe has signed up</p>
@@ -73,7 +73,7 @@
 
               <li class="p-3 border-bottom">
                 <div class="d-flex gap-3">
-                  <img src="./assets/images/avatar/avatar-2.jpg" alt="" class="avatar avatar-sm rounded-circle" />
+                  <img src="../../assets/images/avatar/avatar-2.jpg" alt="" class="avatar avatar-sm rounded-circle" />
                   <div class="flex-grow-1 small">
                     <p class="mb-0">Payment confirmed</p>
                     <p class="mb-1">Payment of $299 has been received</p>
@@ -90,12 +90,12 @@
         <!-- Dropdown -->
         <li class="ms-3 dropdown">
           <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <img src="./assets/images/avatar/avatar-1.jpg" alt="" class="avatar avatar-sm rounded-circle" />
+            <img src="../../assets/images/avatar/avatar-1.jpg" alt="" class="avatar avatar-sm rounded-circle" />
           </a>
           <div class="dropdown-menu dropdown-menu-end p-0" style="min-width: 200px;">
             <div>
               <div class="d-flex gap-3 align-items-center border-dashed border-bottom px-3 py-3">
-                <img src="./assets/images/avatar/avatar-1.jpg" alt="" class="avatar avatar-md rounded-circle" />
+                <img src="../../assets/images/avatar/avatar-1.jpg" alt="" class="avatar avatar-md rounded-circle" />
                 <div>
                   <h4 class="mb-0 small">Shrina Tesla</h4>
                   <p class="mb-0  small">@imshrina</p>
@@ -133,7 +133,7 @@
   </nav>
 
   <!-- SIDEBAR -->
-  <?php include 'sidebar.php'; ?>
+  <?php include '../../sidebar.php'; ?>
 
   <!-- MAIN CONTENT -->
   <main id="content" class="content py-10">
@@ -187,7 +187,7 @@
               </thead>
               <tbody>
                 <tr class="align-middle ">
-                  <td><a href=""><img src="./assets/images/product-1.png" alt="" class="avatar avatar-md rounded" /><span class="ms-3">Gaming Joy Stick</span></a>
+                  <td><a href=""><img src="../../assets/images/product-1.png" alt="" class="avatar avatar-md rounded" /><span class="ms-3">Gaming Joy Stick</span></a>
                   </td>
 
                   <td>PRD001</td>
@@ -202,7 +202,7 @@
                   </td>
                 </tr>
                 <tr class="align-middle">
-                  <td><a href=""><img src="./assets/images/product-2.png" alt="" class="avatar avatar-md rounded" /><span class="ms-3">Wireless Earphones</span></a>
+                  <td><a href=""><img src="../../assets/images/product-2.png" alt="" class="avatar avatar-md rounded" /><span class="ms-3">Wireless Earphones</span></a>
                   </td>
                   <td>PRD002</td>
                   <td>Electronics</td>
@@ -216,7 +216,7 @@
                   </td>
                 </tr>
                 <tr class="align-middle">
-                 <td><a href=""><img src="./assets/images/product-3.png" alt="" class="avatar avatar-md rounded" /><span class="ms-3">Smart Watch Pro</span></a>
+                 <td><a href=""><img src="../../assets/images/product-3.png" alt="" class="avatar avatar-md rounded" /><span class="ms-3">Smart Watch Pro</span></a>
                   </td>
                   <td>PRD003</td>
                   <td>Electronics</td>
@@ -230,7 +230,7 @@
                   </td>
                 </tr>
                 <tr class="align-middle">
-                  <td><a href=""><img src="./assets/images/product-4.png" alt="" class="avatar avatar-md rounded" /><span class="ms-3">USB-C Fast Charger</span></a>
+                  <td><a href=""><img src="../../assets/images/product-4.png" alt="" class="avatar avatar-md rounded" /><span class="ms-3">USB-C Fast Charger</span></a>
                   </td>
                   <td>PRD004</td>
                   <td>Electronics</td>
@@ -244,7 +244,7 @@
                   </td>
                 </tr>
                 <tr class="align-middle">
-                  <td><a href=""><img src="./assets/images/product-5.png" alt="" class="avatar avatar-md rounded" /><span class="ms-3">Portable Bluetooth Speaker</span></a>
+                  <td><a href=""><img src="../../assets/images/product-5.png" alt="" class="avatar avatar-md rounded" /><span class="ms-3">Portable Bluetooth Speaker</span></a>
                   </td>
                   <td>PRD005</td>
                   <td>Electronics</td>
@@ -258,7 +258,7 @@
                   </td>
                 </tr>
                 <tr class="align-middle">
-                  <td><a href=""><img src="./assets/images/product-6.png" alt="" class="avatar avatar-md rounded" /><span class="ms-3">Magic Keyboard</span></a>
+                  <td><a href=""><img src="../../assets/images/product-6.png" alt="" class="avatar avatar-md rounded" /><span class="ms-3">Magic Keyboard</span></a>
                   </td>
                   <td>PRD006</td>
                   <td>Electronics</td>
@@ -272,7 +272,7 @@
                   </td>
                 </tr>
                 <tr class="align-middle">
-                  <td><a href=""><img src="./assets/images/product-7.png" alt="" class="avatar avatar-md rounded" /><span class="ms-3">MacBook Pro 16"</span></a>
+                  <td><a href=""><img src="../../assets/images/product-7.png" alt="" class="avatar avatar-md rounded" /><span class="ms-3">MacBook Pro 16"</span></a>
                   </td>
                   <td>PRD007</td>
                   <td>Electronics</td>
@@ -286,7 +286,7 @@
                   </td>
                 </tr>
                 <tr class="align-middle">
-                  <td><a href=""><img src="./assets/images/product-8.png" alt="" class="avatar avatar-md rounded" /><span class="ms-3">Wireless Earphones</span></a>
+                  <td><a href=""><img src="../../assets/images/product-8.png" alt="" class="avatar avatar-md rounded" /><span class="ms-3">Wireless Earphones</span></a>
                   </td>
                   <td>PRD008</td>
                   <td>Electronics</td>
