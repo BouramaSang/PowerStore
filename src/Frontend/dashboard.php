@@ -5,16 +5,16 @@
   <meta charset="UTF-8" />
   <title>InApp Inventory Dashboard</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon_io/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon_io/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon_io/favicon-16x16.png">
-  <link rel="manifest" href="./assets/images/favicon_io/site.webmanifest">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="../assets/images/favicon_io/site.webmanifest">
     <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Tabler Icons -->
   <link href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" rel="stylesheet">
   <!-- Custom CSS -->
- <link rel="stylesheet" href="./assets/css/style.css">
+ <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
 <body>
@@ -133,7 +133,7 @@
 
   </nav>
  <!-- SIDE BAR -->
- <?php include 'sidebar.php'; ?>
+ <?php include '../sidebar.php'; ?>
 
   <!-- MAIN CONTENT -->
   <main id="content" class="content py-10">

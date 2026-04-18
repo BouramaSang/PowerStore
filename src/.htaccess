@@ -1,0 +1,14 @@
+# .htaccess
+Options -Indexes
+DirectoryIndex login.php
+
+# Protection des fichiers sensibles
+<FilesMatch "\.(sql|log|ini)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Réécriture d'URL (optionnel)
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d

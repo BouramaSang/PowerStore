@@ -136,12 +136,12 @@
     
     <ul class="nav flex-column">
       <li class="px-4 py-2"><small class="nav-text">Main</small></li>
-      <li><a class="nav-link" href="/inapp-1.0.0/src/index.php"><i class="ti ti-home"></i><span
+      <li><a class="nav-link" href="/inapp-1.0.0/src/Frontend/dashboard.php"><i class="ti ti-home"></i><span
             class="nav-text">Dashboard</span></a></li>
         <li class="px-4 py-2"><small class="nav-text">Enregistrements</small></li>
       <li><a class="nav-link" href="/inapp-1.0.0/src/Frontend/category/index_category.php"><i class="ti ti-category"></i><span
             class="nav-text"> Add Category</span></a></li>
-      <li><a class="nav-link" href="/inapp-1.0.0/src/create-product.php"><i class="ti ti-package"></i><span class="nav-text">Add
+      <li><a class="nav-link" href="/inapp-1.0.0/src/Frontend/produits/index_produit.php"><i class="ti ti-package"></i><span class="nav-text">Add
             Product</span></a></li>
     <li><a class="nav-link" href="/inapp-1.0.0/src/reports.php"><i class="ti ti-receipt"></i><span class="nav-text">Reports</span></a>
       </li>
