@@ -135,24 +135,22 @@
     </div>
     
     <ul class="nav flex-column">
-      <li class="px-4 py-2"><small class="nav-text">Main</small></li>
+      <li class="px-4 py-2"><small class="nav-text">Principal</small></li>
       <li><a class="nav-link" href="/inapp-1.0.0/src/Frontend/dashboard.php"><i class="ti ti-home"></i><span
-            class="nav-text">Dashboard</span></a></li>
+            class="nav-text">Tableau de bord</span></a></li>
         <li class="px-4 py-2"><small class="nav-text">Enregistrements</small></li>
       <li><a class="nav-link" href="/inapp-1.0.0/src/Frontend/category/index_category.php"><i class="ti ti-category"></i><span
-            class="nav-text"> Add Category</span></a></li>
-      <li><a class="nav-link" href="/inapp-1.0.0/src/Frontend/produits/index_produit.php"><i class="ti ti-package"></i><span class="nav-text">Add
-            Product</span></a></li>
-     <li><a class="nav-link" href="/inapp-1.0.0/src/Frontend/commandes/index_commande.php"><i class="ti ti-ordered-list"></i><span class="nav-text">Commandes</span></a></li>   
-    <li><a class="nav-link" href="/inapp-1.0.0/src/404-error.php"><i class="ti ti-alert-circle"></i><span class="nav-text">404 Error</span></a>
+            class="nav-text">Catégories</span></a></li>
+      <li><a class="nav-link" href="/inapp-1.0.0/src/Frontend/produits/index_produit.php"><i class="ti ti-package"></i><span class="nav-text">Produits</span></a></li>
+     <li><a class="nav-link" href="/inapp-1.0.0/src/Frontend/commandes/index_commande.php"><i class="ti ti-truck"></i><span class="nav-text">Commandes</span></a></li>   
+    <li><a class="nav-link" href="/inapp-1.0.0/src/Frontend/factures/index_facture.php"><i class="ti ti-file-text"></i><span class="nav-text">Factures</span></a>
       </li>
       <li><a class="nav-link" href="/inapp-1.0.0/src/docs.php"><i class="ti ti-file-text"></i><span class="nav-text">Docs</span></a></li>
 
-      <li class="px-4 pt-4 pb-2"><small class="nav-text">Account</small></li>
-      <li><a class="nav-link" href="/inapp-1.0.0/src/signin.php"><i class="ti ti-logout"></i><span class="nav-text">Log in</span></a>
+      <li class="px-4 pt-4 pb-2"><small class="nav-text">Compte</small></li>
+      <li><a class="nav-link" href="/inapp-1.0.0/src/signin.php"><i class="ti ti-logout"></i><span class="nav-text">Se connecter</span></a>
       </li>
-      <li><a class="nav-link" href="/inapp-1.0.0/src/signup.php"><i class="ti ti-user-plus"></i><span class="nav-text">Sign
-            up</span></a></li>
+      <li><a class="nav-link" href="/inapp-1.0.0/src/signup.php"><i class="ti ti-user-plus"></i><span class="nav-text">S'inscrire</span></a></li>
     </ul>
   </aside>
   

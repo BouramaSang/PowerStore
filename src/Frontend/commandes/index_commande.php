@@ -340,18 +340,24 @@ if (o.statut === 'livree' && o.facture_id) {
     }
     updateBulkBar();
 }
-
  async function handleStatusChange(e) {
     let sel = e.target;
     let id = parseInt(sel.dataset.id);
     let newStatus = sel.value;
     if (!newStatus) return;
+    
+    // Si c'est un passage en livrée, on redirige vers la page de choix
+    if (newStatus === 'livree') {
+        window.location.href = `update_status.php?id=${id}&status=livree`;
+        return;
+    }
+    
+    // Sinon, changement direct
     sel.disabled = true;
     try {
         let res = await fetch(`update_status.php?id=${id}&status=${newStatus}`);
         if (res.ok) {
             showToast(`Statut mis à jour`);
-            // Recharger la page pour avoir la facture_id
             location.reload();
         } else showToast(`Erreur`);
     } catch(e) { showToast(`Erreur réseau`); }

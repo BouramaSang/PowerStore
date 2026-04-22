@@ -108,7 +108,7 @@ include '../../sidebar.php';
             <div class="alert alert-success alert-dismissible fade show mb-4" role="alert">
                 <i class="fa-solid fa-check-circle me-2"></i>
                 <strong>Commande marquée comme livrée !</strong> La facture a été générée automatiquement.
-                <a href="view_facture.php?id=<?= $commande['facture_id'] ?>" class="alert-link ms-2">
+                <a href="../factures/view_facture.php?id=<?= $commande['facture_id'] ?>" class="alert-link ms-2">
                     <i class="fa-solid fa-file-pdf"></i> Voir la facture
                 </a>
                 <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
@@ -151,7 +151,7 @@ include '../../sidebar.php';
                     <p class="mb-0">
                         <strong>Facture :</strong> 
                         <?php if($commande['facture_id']): ?>
-                            <a href="view_facture.php?id=<?= $commande['facture_id'] ?>" class="btn btn-sm btn-outline-danger mt-1">
+                            <a href="../factures/view_facture.php?id=<?= $commande['facture_id'] ?>" class="btn btn-sm btn-outline-danger mt-1">
                                 <i class="fa-solid fa-file-pdf me-1"></i>
                                 📄 Voir la facture #<?= $commande['facture_id'] ?>
                             </a>
@@ -195,7 +195,7 @@ include '../../sidebar.php';
             <?php if($commande['statut'] !== 'livree'): ?>
                 <!-- Passer à livrée -->
                 <a href="update_status.php?id=<?= $id ?>&status=livree" 
-                   class="btn btn-success" 
+                   class="btn btn-success btn-sm" 
                    onclick="return confirm('Marquer cette commande comme livrée ? Une facture sera générée automatiquement.')">
                     <i class="fa-solid fa-check-circle"></i> Marquer livrée
                 </a>
@@ -204,16 +204,26 @@ include '../../sidebar.php';
             <?php if($commande['statut'] !== 'annulee'): ?>
                 <!-- Passer à annulée -->
                 <a href="update_status.php?id=<?= $id ?>&status=annulee"
-                   class="btn btn-danger"
+                   class="btn btn-dangerbtn-sm"
                    onclick="<?php echo 'return confirm(\'⚠️ Annuler cette commande ?\\n\\n' . ($commande['statut'] === 'livree' ? 'Le stock sera restauré et la facture supprimée.' : '') . '\')'; ?>">
                     <i class="fa-solid fa-ban"></i> Annuler
                 </a>
+                <?php if(isset($_GET['added_to_facture'])): ?>
+    <div class="alert alert-success alert-dismissible fade show mb-4" role="alert">
+        <i class="fa-solid fa-check-circle me-2"></i>
+        <strong>Commande livrée !</strong> La commande a été ajoutée à la facture #<?= $_GET['added_to_facture'] ?>.
+        <a href="../factures/view_facture.php?id=<?= $_GET['added_to_facture'] ?>" class="alert-link ms-2">
+            <i class="fa-solid fa-file-invoice"></i> Voir la facture
+        </a>
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+<?php endif; ?>
             <?php endif; ?>
             
             <?php if($commande['statut'] !== 'en_attente'): ?>
                 <!-- Repasser en attente -->
                 <a href="update_status.php?id=<?= $id ?>&status=en_attente"
-                   class="btn btn-warning"
+                   class="btn btn-warning btn-sm"
                    onclick="<?php echo 'return confirm(\'⚠️ Repasser cette commande en "En attente" ?\\n\\n' . ($commande['statut'] === 'livree' ? 'La facture sera supprimée.' : '') . '\')'; ?>">
                     <i class="fa-solid fa-undo"></i> Repasser en attente
                 </a>
