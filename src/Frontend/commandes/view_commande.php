@@ -176,14 +176,14 @@ include '../../sidebar.php';
                         <?php foreach($details as $d): ?>
                         <tr>
                             <td><strong><?= htmlspecialchars($d['produit_nom']) ?></strong></td>
-                            <td class="text-center"><?= number_format($d['prix_unitaire'], 0, ',', ' ') ?> FCFA</td>
+                            <td class="text-center"><?= number_format($d['prix_unitaire'], 0, ',', ' ') ?> FCFA</span>
                             <td class="text-center"><?= $d['quantite'] ?></td>
-                            <td class="text-end fw-bold"><?= number_format($d['quantite'] * $d['prix_unitaire'], 0, ',', ' ') ?> FCFA</td>
+                            <td class="text-end fw-bold"><?= number_format($d['quantite'] * $d['prix_unitaire'], 0, ',', ' ') ?> FCFA</span>
                         </tr>
                         <?php endforeach; ?>
                     </tbody>
                     <tfoot class="table-light">
-                        <tr><td colspan="3" class="text-end fw-bold">TOTAL :</td><td class="text-end fs-5 fw-bold" style="color: var(--primary);"><?= number_format($total, 0, ',', ' ') ?> FCFA</td></tr>
+                        <tr><td colspan="3" class="text-end fw-bold">TOTAL :</span><td class="text-end fs-5 fw-bold" style="color: var(--primary);"><?= number_format($total, 0, ',', ' ') ?> FCFA</span></tr>
                     </tfoot>
                 </table>
             </div>
@@ -203,18 +203,18 @@ include '../../sidebar.php';
             
             <?php if($commande['statut'] !== 'annulee'): ?>
                 <!-- Passer à annulée -->
-                <a href="update_status.php?id=<?= $id ?>&status=annulee" 
-                   class="btn btn-danger" 
-                   onclick="return confirm('⚠️ Annuler cette commande ?\n\n<?= $commande['statut'] === 'livree' ? 'Le stock sera restauré et la facture supprimée.' : '' ?>')">
+                <a href="update_status.php?id=<?= $id ?>&status=annulee"
+                   class="btn btn-danger"
+                   onclick="<?php echo 'return confirm(\'⚠️ Annuler cette commande ?\\n\\n' . ($commande['statut'] === 'livree' ? 'Le stock sera restauré et la facture supprimée.' : '') . '\')'; ?>">
                     <i class="fa-solid fa-ban"></i> Annuler
                 </a>
             <?php endif; ?>
             
-            <?php if($commande['statut'] !== 'en_attente' && $commande['statut'] !== 'en_attente'): ?>
+            <?php if($commande['statut'] !== 'en_attente'): ?>
                 <!-- Repasser en attente -->
-                <a href="update_status.php?id=<?= $id ?>&status=en_attente" 
-                   class="btn btn-warning" 
-                   onclick="return confirm('⚠️ Repasser cette commande en "En attente" ?\n\n<?= $commande['statut'] === 'livree' ? 'La facture sera supprimée.' : '' ?>')">
+                <a href="update_status.php?id=<?= $id ?>&status=en_attente"
+                   class="btn btn-warning"
+                   onclick="<?php echo 'return confirm(\'⚠️ Repasser cette commande en "En attente" ?\\n\\n' . ($commande['statut'] === 'livree' ? 'La facture sera supprimée.' : '') . '\')'; ?>">
                     <i class="fa-solid fa-undo"></i> Repasser en attente
                 </a>
             <?php endif; ?>

@@ -41,16 +41,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             }
             $total += $pdt['prix'] * $item['qty'];
         }
-        
+        $first_product_id = $items[0]['id'];
         if ($stock_ok && empty($error)) {
             try {
                 $pdo->beginTransaction();
                 
                 $stmt = $pdo->prepare("
-                    INSERT INTO commandes (client_id, date_commande, statut, total_ttc) 
-                    VALUES (?, ?, 'en_attente', ?)
+                    INSERT INTO commandes (client_id, date_commande, statut, total_ttc,produit_id) 
+                    VALUES (?, ?, 'en_attente', ?, ?)
                 ");
-                $stmt->execute([$client_id, $date_commande, $total]);
+                $stmt->execute([$client_id, $date_commande, $total, $first_product_id]);
                 $commande_id = $pdo->lastInsertId();
                 
                 foreach ($items as $item) {
