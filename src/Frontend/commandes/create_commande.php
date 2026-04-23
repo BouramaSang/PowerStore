@@ -47,10 +47,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $pdo->beginTransaction();
                 
                 $stmt = $pdo->prepare("
-                    INSERT INTO commandes (client_id, date_commande, statut, total_ttc,produit_id) 
-                    VALUES (?, ?, 'en_attente', ?, ?)
+                    INSERT INTO commandes (client_id,created_by, date_commande, statut, total_ttc,produit_id) 
+                    VALUES (?, ?,?, 'en_attente', ?, ?)
                 ");
-                $stmt->execute([$client_id, $date_commande, $total, $first_product_id]);
+                $stmt->execute([$client_id, $_SESSION['user_id'], $date_commande, $total, $first_product_id]);
                 $commande_id = $pdo->lastInsertId();
                 
                 foreach ($items as $item) {

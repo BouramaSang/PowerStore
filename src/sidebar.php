@@ -133,25 +133,33 @@
         <img src="/inapp-1.0.0/src/assets/images/logo-icon3.svg" alt="Logo réduit" class="logo-collapsed">
      </a>
     </div>
-    
     <ul class="nav flex-column">
-      <li class="px-4 py-2"><small class="nav-text">Principal</small></li>
-      <li><a class="nav-link" href="/inapp-1.0.0/src/Frontend/dashboard.php"><i class="ti ti-home"></i><span
-            class="nav-text">Tableau de bord</span></a></li>
-        <li class="px-4 py-2"><small class="nav-text">Enregistrements</small></li>
-      <li><a class="nav-link" href="/inapp-1.0.0/src/Frontend/category/index_category.php"><i class="ti ti-category"></i><span
-            class="nav-text">Catégories</span></a></li>
-      <li><a class="nav-link" href="/inapp-1.0.0/src/Frontend/produits/index_produit.php"><i class="ti ti-package"></i><span class="nav-text">Produits</span></a></li>
-     <li><a class="nav-link" href="/inapp-1.0.0/src/Frontend/commandes/index_commande.php"><i class="ti ti-truck"></i><span class="nav-text">Commandes</span></a></li>   
-    <li><a class="nav-link" href="/inapp-1.0.0/src/Frontend/factures/index_facture.php"><i class="ti ti-file-text"></i><span class="nav-text">Factures</span></a>
-      </li>
-      <li><a class="nav-link" href="/inapp-1.0.0/src/docs.php"><i class="ti ti-file-text"></i><span class="nav-text">Docs</span></a></li>
+    <!-- Principal -->
+    <li class="px-4 py-2"><small class="nav-text">Principal</small></li>
+    <li><a class="nav-link" href="/inapp-1.0.0/src/Frontend/dashboard.php"><i class="ti ti-home"></i><span class="nav-text">Tableau de bord</span></a></li>
+    
+    <!-- Ventes -->
+    <li class="px-4 py-2"><small class="nav-text">Ventes</small></li>
+    <li><a class="nav-link" href="/inapp-1.0.0/src/Frontend/commandes/index_commande.php"><i class="ti ti-truck"></i><span class="nav-text">Commandes</span></a></li>
+    <li><a class="nav-link" href="/inapp-1.0.0/src/Frontend/factures/index_facture.php"><i class="ti ti-file-text"></i><span class="nav-text">Factures</span></a></li>
+    
+    <!-- Catalogue -->
+    <li class="px-4 py-2"><small class="nav-text">Catalogue</small></li>
+    <li><a class="nav-link" href="/inapp-1.0.0/src/Frontend/category/index_category.php"><i class="ti ti-category"></i><span class="nav-text">Catégories</span></a></li>
+    <li><a class="nav-link" href="/inapp-1.0.0/src/Frontend/produits/index_produit.php"><i class="ti ti-package"></i><span class="nav-text">Produits</span></a></li>
+    
+    <!-- Clients -->
+    <li class="px-4 py-2"><small class="nav-text">Clients</small></li>
+    <li><a class="nav-link" href="/inapp-1.0.0/src/Frontend/clients/index_client.php"><i class="ti ti-user"></i><span class="nav-text">Clients</span></a></li>
+    
+    <!-- Rapports -->
+    <li class="px-4 py-2"><small class="nav-text">Rapports</small></li>
+    <li><a class="nav-link" href="/inapp-1.0.0/src/Frontend/reports.php"><i class="ti ti-chart-bar"></i><span class="nav-text">Rapports</span></a></li>
 
-      <li class="px-4 pt-4 pb-2"><small class="nav-text">Compte</small></li>
-      <li><a class="nav-link" href="/inapp-1.0.0/src/signin.php"><i class="ti ti-logout"></i><span class="nav-text">Se connecter</span></a>
-      </li>
-      <li><a class="nav-link" href="/inapp-1.0.0/src/signup.php"><i class="ti ti-user-plus"></i><span class="nav-text">S'inscrire</span></a></li>
-    </ul>
+    <!-- Compte -->
+    <li class="px-4 pt-4 pb-2"><small class="nav-text">Compte</small></li>
+    <li><a class="nav-link" href="/inapp-1.0.0/src/logout.php"><i class="ti ti-logout"></i><span class="nav-text">Déconnexion</span></a></li>
+</ul>
   </aside>
   
  
